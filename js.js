@@ -1,5 +1,5 @@
 document.getElementById('cube').onmousemove = function (e) {
-    this.style.transform = 'rotateX(' + e.pageY * 2 + 'deg) rotateY(' + e.pageX + 'deg)';
+    this.style.transform = 'rotateX(' + e.pageY * 5 + 'deg) rotateY(' + -e.pageX * 5 + 'deg)';
 
 };
 
@@ -35,6 +35,25 @@ function start() {
     
        sec.classList.remove('hide');
        sec.classList.add('show');
+      
+       }
+    
+        
     
     
+
+
+    var p = document.getElementsByClassName('minimenu');
+    console.log(p);
+    var info = document.getElementsByClassName('info');
+    console.log(info);
+
+    for(i=0; i<p.length; i++){
+        info[i].classList.add('hide');
+        p[i].addEventListener('click', start2);
+    }
+
+function start2(e){
+    var z = e.target.TEXT_NODE;
+    console.log(z);
 }

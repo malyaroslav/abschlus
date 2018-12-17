@@ -1,48 +1,64 @@
-.wrapper {
-    position: relative;
+*{
+    
+    
+    margin: 0;
+    padding: 0;
 }
+body{
+    background: rgba(0, 255, 235, 0.07);
+}
+.wrapper {
+    display: flex;
+    
+    position: relative;
+/*    width: 900px;*/
+/*    height: 700px;*/
+    margin: 0 auto;
+    justify-content: space-between;
+    }
 
 .wrap30 {
-    width: 400px;
-    height: 800px;
-    background: rgba(255, 0, 0, 0.4);
-    height: 800px;
-
+    width: 30%;
     perspective: 800px;
     /*    background: rgba(0, 0, 255, 0.42);*/
-    left: 50px;
-    position: absolute;
+    
+/*    position: absolute;*/
+/*    margin-left: 100px;*/
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
 
 }
 
 
 #cube {
     top: 250px;
-    left: 50px;
+    left: 10px;
     position: relative;
-    width: 300px;
-    height: 300px;
-    transform-origin: 50% 50% -150px;
+    width: 150px;
+    height: 150px;
+    transform-origin: 50% 50% -75px;
     transform: rotate3d(1, 1, 1, 200deg);
     transform-style: preserve-3d;
 
 }
 
 .side {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     background: rgb(0, 206, 255);
     background: radial-gradient(rgba(37, 217, 204, 0.52), rgba(40, 0, 255, 0.75));
+
     position: absolute;
     border: 5px solid rgba(17, 13, 65, 0.89);
     border-radius: 10px;
-    font-size: 5em;
+    font-size: 2em;
     color: #fff;
-    line-height: 300px;
+    line-height: 150px;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4);
     box-shadow: 0 0 6px rgb(14, 30, 152);
-    transform-origin: 50% 50% -150px;
+    transform-origin: 50% 50% -75px;
     backface-visibility: hidden;
     transition: .2s;
 
@@ -76,21 +92,22 @@
 }
 
 
-#about {
-    position: absolute;
-    top: 250px;
-    border: 1px solid red;
-    width: 500px;
-    top: 10px;
-}
+
 
 #wrap70 {
     position: relative;
-    width: 1400px;
-    height: 800px;
-    background: rgba(46, 46, 157, 0.28);
-    float: right;
+    width: 100%;
+    
+    /*    background: rgba(46, 46, 157, 0.28);*/
+    
+    
 }
+
+/*
+.clear {
+    clear: right;
+}
+*/
 
 
 ._about h1 {
@@ -98,70 +115,154 @@
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 500px;
+    left: 200px;
     color: red;
 
 }
 
-._home h1{
+._home h1 {
     position: absolute;
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 500px;
+    left: 200px;
+    color: red;
+
+}
+
+._3 h1 {
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    top: 300px;
+    left: 200px;
     color: red;
 }
 
-._3 h1{
+._Portfolio h1 {
     position: absolute;
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 500px;
-    color: red;
-}
-
-._Portfolio h1{
-    position: absolute;
-    width: 500px;
-    text-align: center;
-    top: 300px;
-    left: 500px;
+    left: 200px;
     color: red;
     transition: 1s;
 }
 
-._Contacts h1{
+._Contacts h1 {
     position: absolute;
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 500px;
+    left: 200px;
     color: red;
     transition: 1s;
 }
 
 
-._nw h1{
+._nw h1 {
     position: absolute;
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 500px;
+    left: 200px;
     color: red;
     transition: 1s;
+
 }
 
 
 .show {
+    opacity: 1;
     display: block;
-    
+    transition: 1s;
+
+
 }
 
 .hide {
+    opacity: 0;
     display: none;
+    transition: 1s;
+
 }
 
-section{
-    transition: 1s;
+section {
+    width: 100%;
+    transition: .2s;
+
+}
+
+#wrap70 > .vr1 {
+    background: rgba(255, 0, 0, 0.31);
+    height: 700px;
+    position: absolute;
+    
+
+
+}
+
+
+#wrap70 > .vr2 {
+    background: rgba(69, 255, 0, 0.31);
+    height: 700px;
+    position: absolute;
+     
+}
+
+#wrap70 > .vr3 {
+    background: rgba(0, 255, 216, 0.31);
+    height: 700px;
+    position: absolute;
+    
+}
+
+#wrap70 > .vr4 {
+    background: rgba(0, 39, 255, 0.31);
+    height: 700px;
+    position: absolute;
+    
+}
+
+#wrap70 > .vr5 {
+    background: rgba(235, 0, 255, 0.31);
+    height: 700px;
+    position: absolute;
+    
+}
+
+#wrap70 > .vr6 {
+     
+    background: rgba(107, 160, 212, 0.31);
+    height: 700px;
+    position: absolute;
+   
+}
+
+
+.wr{
+    width: 800px;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.foto{
+    width: 400px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.minimenu{
+    width: 300px;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.info{
+    border: 1px solid blue;
+    position: relative;
+}
+.minimenu p:hover {
+    background: blue;
 }
