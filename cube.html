@@ -25,23 +25,18 @@
         <main id="wrap70">
             <section class="_about vr1">
                 <h1>About</h1>
-                <div class="wr">
-                    <div class="links">1
-                    <div class="foto"><img src="" alt=""></div>
-                    <div class="minimenu">
-                        <p>menu</p>
-                        <p>menu</p>
-                        <p>menu</p>
+
+                <div id="tabs">
+                    <div class="wrapTabs">
+                        <div class="tab whiteborder">1</div>
+                        <div class="tab">2</div>
+                        <div class="tab">3</div>
                     </div>
-                    
-                    </div>
-                    <div class="right">Info
-                    <div class="info show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolores officia harum enim nihil assumenda vel sint illo cupiditate. Quis placeat sint sapiente excepturi praesentium quo dignissimos ex, explicabo, culpa odio laboriosam sed deleniti consectetur accusamus ea pariatur dolor esse molestiae perferendis amet quasi quas. Itaque distinctio porro quo optio.</div>
-                    <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolores officia harum enim nihil assumenda vel sint illo cupiditate. Quis placeat sint sapiente excepturi praesentium quo dignissimos ex, explicabo, culpa odio laboriosam sed deleniti consectetur accusamus ea pariatur dolor esse molestiae perferendis amet quasi quas. Itaque distinctio porro quo optio.</div>
-                    <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolores officia harum enim nihil assumenda vel sint illo cupiditate. Quis placeat sint sapiente excepturi praesentium quo dignissimos ex, explicabo, culpa odio laboriosam sed deleniti consectetur accusamus ea pariatur dolor esse molestiae perferendis amet quasi quas. Itaque distinctio porro quo optio.</div>
-                    </div>
+                    <div class="tabContent">1</div>
+                    <div class="tabContent">2</div>
+                    <div class="tabContent">3</div>
                 </div>
-                
+
             </section>
 
             <section class="_home vr2">
@@ -54,6 +49,21 @@
 
             <section class="_Portfolio vr4">
                 <h1>Portfolio</h1>
+                <div id="slider">
+
+
+                    <ul id="slides">
+                        <li class="slide showing"><img src="https://picsum.photos/200/300/?random*3" alt=""></li>
+                        <li class="slide"><img src="https://picsum.photos/200/300/?random*2" alt=""></li>
+                        <li class="slide"><img src="https://picsum.photos/200/300/?random*1" alt=""></li>
+                        <li class="slide"><img src="https://picsum.photos/200/300/?random*5" alt=""></li>
+                        <li class="slide"><img src="https://picsum.photos/200/300/?random*6" alt=""></li>
+                    </ul>
+
+
+                    <a class="prev" onclick="prevSlide1()">prev</a>
+                    <a class="next" onclick="nextSlide1()">next</a>
+                </div>
             </section>
 
             <section class="_Contacts vr5">
@@ -64,10 +74,10 @@
                 <h1>6</h1>
             </section>
 
-                    
+
         </main>
     </div>
-<!--    <div class="clear"></div>-->
+    <!--    <div class="clear"></div>-->
     <script src="js.js"></script>
 </body>
 

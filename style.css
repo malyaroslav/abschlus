@@ -9,12 +9,12 @@ body{
 }
 .wrapper {
     display: flex;
+    width: 90%;
     
-    position: relative;
 /*    width: 900px;*/
 /*    height: 700px;*/
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     }
 
 .wrap30 {
@@ -266,3 +266,75 @@ section {
 .minimenu p:hover {
     background: blue;
 }
+
+
+
+/*tabs start*/
+#tabs{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#tabs .tab{
+    
+    width: 150px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    
+}
+
+#tabs .whiteborder{
+    border: 5px solid #0089ff;
+    border-bottom: 1px solid #5d1bdb;
+    border-radius: 3px 3px 0 0;
+}
+
+#tabs .tabContent{
+    width: 300px;
+    height: 60px;
+    border: 1px solid #707070;
+    position: relative;
+    
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    
+}
+
+#tabs .hide{
+    display: none;
+}
+
+#tabs .show{
+    display: block;
+}
+/*tabs end*/
+
+
+/*slide start*/
+#slides{
+    position: relative;
+    height: 300px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+    z-index: 1;
+    transition:  .1s .1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+/*slider end*/
