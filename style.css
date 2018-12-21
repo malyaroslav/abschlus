@@ -116,10 +116,23 @@ body {
     position: absolute;
     width: 500px;
     text-align: center;
-    top: 300px;
-    left: 200px;
-    color: red;
+    top: 350px;
+    left: 300px;
+    color: #1f1fe3;
+    font-size: 30px;
 
+}
+
+._about .far {
+    font-size: 50px;
+    animation: click 1s infinite;
+}
+
+@keyframes click{
+    100%{
+        transform: scale(1.5);
+        color: #3bd826;
+    }
 }
 
 ._home h1 {
@@ -155,8 +168,12 @@ body {
     width: 500px;
     text-align: center;
     top: 300px;
-    left: 200px;
-    color: red;
+    left: 350px;
+    color: #0000ff;
+}
+
+._3 h1 i{
+    font-size: 55px;
 }
 
 ._Portfolio h1 {
@@ -219,6 +236,7 @@ section {
 
     height: 700px;
     position: absolute;
+    background-size: cover;
 
 
 
@@ -259,17 +277,18 @@ section {
 }
 
 #wrap70 > .vr5 {
-    background: url(1.jpg);
+    background: url(2.jpg);
     /*    background: rgba(235, 0, 255, 0.31);*/
     height: 700px;
     position: absolute;
     background-position: center;
+    background-size: cover
 
 }
 
 #wrap70 > .vr6 {
 
-    background: rgba(107, 160, 212, 0.31);
+/*    background: rgba(107, 160, 212, 0.31);*/
     height: 700px;
     position: absolute;
 
@@ -333,12 +352,13 @@ section {
     border-bottom: 1px solid #5d1bdb;
     border-radius: 3px 3px 0 0;
     background: white;
+    z-index: 1;
 }
 
 #tabs .tabContent {
     width: auto;
     height: auto;
-    border: 1px solid #707070;
+    border: 1px solid #27be89;
     position: relative;
 
     z-index: 2;
@@ -382,16 +402,18 @@ section {
 */
     opacity: 0;
     z-index: 1;
-    transition: .1s .1s;
+    transition: 2s;
 }
 
 .showing {
     opacity: 1;
     z-index: 2;
+    
 }
 
 ul#slides {
     display: flex;
+    margin: 0 auto;
 }
 
 /*slider end*/
@@ -405,6 +427,7 @@ ul#slides {
     width: 200px;
     height: 200px;
     overflow: hidden;
+    
 
 }
 
@@ -414,6 +437,7 @@ ul#slides {
     width: 200px;
     height: 200px;
     transition: 1.2s;
+    
 
 
 
@@ -427,6 +451,7 @@ ul#slides {
     background: #4800d1;
     left: 210px;
     transition: 1s 1s;
+    
 
 
 }
@@ -435,9 +460,19 @@ ul#slides {
     background: rgba(22, 174, 180, 0.7);
     overflow: hidden;
     box-shadow: 1px 1px blue;
+    
+    
 
 
 }
+
+
+._Contacts form label{
+    color:#171ed6;
+    font-size: 22px;
+    font-weight: 400;
+}
+
 
 p.text_anim {
     position: absolute;
@@ -501,19 +536,30 @@ p.text_anim {
 
 
     transform: scale(1.5);
-    background: rgb(66, 40, 114);
+    background: rgb(81, 152, 248);
     transform: scale(-1.5);
-    transform: rotateX(360deg);
+    transform: rotateY(360deg);
     width: 500px;
     position: absolute;
     height: 50px;
     transition: 1s;
-    right: 15px;
-    bottom: 50px;
+    right: 40px;
+    bottom: 65px;
+    z-index: 1;
+    
+    
 
 
 }
 
+
+
+
+#slides ul li img{
+    width: 600px;
+    height: 600px;
+    align-items: center;
+}
 
 .wrap_portf:hover .wrap_color5 {
     transform: scale(1.5);
@@ -639,6 +685,14 @@ ul li {
 .fab {
     color: blue;
     font-size: 30px;
+    
+    right: 0;
+}
+
+._Contacts ul{
+    position: fixed;
+    top: 30%;
+    right:0;
 }
 
 
@@ -836,3 +890,76 @@ main:hover .ww {
 }
 
 /*about me*/
+
+
+/*skils*/
+
+.wrap_skills{
+    display: flex;
+    justify-content: space-around;
+/*    animation: circle 5s linear infinite;*/
+/*    transform-origin: 50% 50% 1px;*/
+    transform: rotate3d(1, 1, 1, 1deg);
+    transform-style: preserve-3d;
+    border-radius: 50%;
+}
+
+.wrap_skills img{
+    width: 150px;
+    height: 150px;
+    animation: circle 12s linear infinite;
+}
+
+img[src="html5.png"], img[src="js.svg"]{
+  animation: circle3 5s 1s linear infinite;   
+}
+
+img[src="react.png"], img[src="nodejs.png"]{
+    width: 250px;
+    animation: circle2 8s 3s linear infinite;
+}
+
+.skils_links{
+    animation: circle 9s 1s linear infinite;
+}
+
+.skils_right{
+    animation: circle 15s linear infinite;
+}
+
+@keyframes circle{
+    
+    
+    100%{
+        transform: rotateX(360deg);
+/*
+        transform: rotateZ(360deg);
+        transform: rotateY(360deg);
+*/
+        
+    }
+}
+
+@keyframes circle2{
+    
+    
+    100%{
+/*        transform: rotateX(360deg);*/
+        transform: rotateZ(360deg);
+        transform: rotateY(360deg);
+        
+    }
+}
+
+@keyframes circle3{
+    
+    
+    100%{
+        transform: rotateX(360deg);
+/*        transform: rotateZ(360deg);*/
+        transform: rotateY(360deg);
+        
+    }
+}
+
+/*skills*/
